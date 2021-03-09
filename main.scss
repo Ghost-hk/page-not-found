@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    padding: 0 5%;
+
+    .nav_list {
+        list-style: none;
+        display: flex;
+    
+        & li {
+            padding-left: 60px;
+        }
+    }
+}
+
+.info {
+    position: relative;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.er404img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    transform: translatey(-40%);
+}
+
+
+
+.contant {
+    display: flex;
+    height: 80vh;
+    /* width: 100%; */
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 62px;
+}
+
+.buton {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 16px;
+    background-color: rgba(108, 99, 255, 1);
+    color: #fff;
+    outline:none;
+
+
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        border: 2px solid  rgba(108, 99, 255, 1);
+    }
+
+    &:active {
+        box-shadow: 1px 0px 3px #6C63FF;
+    }
+}
+
+.para {
+    line-height: 1.8;
+    font-size: 20px;
+    
+    .color {
+        color: #6C63FF;
+    }
+}
+
+.smsvg {
+    height: 18px;
+    width: 18px;
+}
+
+footer {
+    display: flex;
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.footer-list {
+    list-style: none;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Planet-2, #Planet-main  {
+    animation: rotation 20s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@keyframes rotation {
+    from{
+        transform: rotatez(0deg);
+    }
+    to {
+        transform: rotatez(360deg);
+    }
+}
+
+
+#Ring {
+    animation: ring 3s alternate-reverse linear infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+@keyframes ring {
+    from{
+        transform: rotatez(-10deg);
+    }
+    to {
+        transform: rotatez(10deg);
+    }
+}
+
+footer {
+    color:  #E5E5E5;
+}
